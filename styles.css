@@ -1,0 +1,227 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+* {
+    font-family: 'Be Vietnam Pro', sans-serif;
+    color: hsl(228, 39%, 23%);
+}
+
+body {
+    max-width: 1240px;
+    margin: auto;
+    padding: 0px 50px;
+    background-image: url(./images/bg-tablet-pattern.svg);
+    background-repeat: no-repeat;
+    background-position: 95% -75%;
+}
+
+#header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 150px;
+    
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li {
+    text-decoration: none;
+    padding: 5px 10px;
+    margin: 0px 10px;
+    font-weight: 500;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-size: .9em;
+}
+
+nav ul li:hover {
+    color: hsl(227, 12%, 61%);
+    cursor: pointer;
+}
+
+header button {
+    background-color: hsl(12, 88%, 59%);
+    border: none;
+    border-radius: 25px;
+    padding: 15px 30px;
+    color: white;
+    font-weight: 500;
+}
+
+header button:hover {
+    cursor: pointer;
+    opacity: 80%;
+}
+
+#banner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 50px;
+}
+
+#bannerLeft {
+    max-width: 50%;
+    flex: 1;
+}
+
+#bannerLeft h1 {
+    font-size: 3.5em;
+    max-width: 500px;
+}
+
+#bannerLeft h2 {
+    font-size: 1.1em;
+    color: hsl(227, 12%, 61%);
+    font-weight: 400;
+    max-width: 350px;
+}
+
+#bannerLeft button {
+    background-color: hsl(12, 88%, 59%);
+    border: none;
+    border-radius: 25px;
+    padding: 15px 30px;
+    color: white;
+    font-weight: 500;
+    margin-top: 25px;
+}
+
+#bannerRight img {
+    height: 90%;
+    width: 90%;
+}
+
+#bannerRight {
+    max-width: 50%;
+    display: flex;    
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#about {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 100px;
+}
+
+#aboutLeft {
+    display: flex;
+    flex-direction: column;
+    max-width: 50%;
+    margin-right: 25px;
+}
+
+#aboutLeft h3 {
+    font-size: 2.5em;
+}
+
+#aboutLeft p {
+    font-size: 1em;
+    color: hsl(227, 12%, 61%);
+    font-weight: 400;
+    max-width: 350px;
+    margin-top: -20px;
+}
+
+#aboutRight {
+    display: flex;
+    flex-direction: column;
+    max-width: 50%;
+    margin-left: 25px;
+    margin-top: 20px;
+}
+
+.aboutItem {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 25px;
+}
+
+.number {
+    background-color: hsl(12, 88%, 59%);
+    border: none;
+    border-radius: 25px;
+    padding: 10px 25px;
+    color: white;
+    font-weight: 400;
+    margin-top: 25px;
+    width: fit-content;
+    height: fit-content;
+    margin-left: -20px;
+    margin-right: 20px;
+}
+
+.aboutText {
+    margin-top: 15px;
+}
+
+.aboutText h4 {
+    font-weight: 700;
+}
+
+.aboutText p {
+    color: hsl(227, 12%, 61%);
+}
+
+#testimonials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 75px;
+}
+
+#testimonials h3 {
+    font-size: 2.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#reviews {
+    display: flex;
+    margin-top: 75px;
+    margin-bottom: 100px;
+    overflow-x: auto;
+    max-height: 500px;
+}
+
+.review {
+    background-color: hsl(0, 0%, 98%);
+    min-width: 650px;
+    height: 250px;
+    margin: 0 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 25px;
+    text-align: center;
+}
+
+.review img {
+    height: 75px;
+    width: 75px;
+    margin-top: -35px;
+}
+
+.review h5 {
+    font-size: .9em;
+    font-weight: 700;
+    margin-bottom: -5px;
+}
+
+.review p {
+    color: hsl(227, 12%, 61%);
+    font-size: 1.1em;
+    padding-bottom: 15px;
+}
