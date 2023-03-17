@@ -6,12 +6,31 @@
     color: hsl(228, 39%, 23%);
 }
 
-body {
+/* body {
     max-width: 1240px;
     margin: auto;
     background-image: url(./images/bg-tablet-pattern.svg);
     background-repeat: no-repeat;
     background-position: 95% -10%;
+} */
+
+body {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#main {
+    max-width: 1240px;
+    margin: auto;
+    background-image: url(./images/bg-tablet-pattern.svg);
+    background-repeat: no-repeat;
+    background-position: 95% -10%;
+    margin: 0;
+    
+    width: 100%;;
 }
 
 #header {
@@ -242,19 +261,28 @@ nav ul li:hover {
     padding-bottom: 15px;
 }
 
+#startedSection {
+    width: 100%;
+    background-image: url(./images/bg-tablet-pattern.svg);
+    background-blend-mode: soft-light;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(12, 88%, 59%);
+    height: fit-content;
+    margin-top: 150px;
+}
+
 #started {
     width: auto;
     max-width: 1240px;
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    height: 150px;
-    background-color: hsl(12, 88%, 59%);
-    margin-top: 150px;
     padding: 50px;
-    background-image: url(./images/bg-tablet-pattern.svg);
-    background-blend-mode: soft-light;
+    
 }
 
 #started p {
@@ -279,14 +307,25 @@ nav ul li:hover {
     background-color: rgb(236, 233, 233);
 }
 
+#footerSection {
+    max-width: 1240px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    padding: 0px 50px;
+}
+
 footer {
     background-color: #1E1E26;
     color: white;
-    padding: 60px 20px;
+    padding: 60px 00px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: flex-start;
+    width: 100%;
 }
 
 .footerImages {
@@ -498,7 +537,6 @@ footer ul li:hover {
         justify-content: flex-start;
         align-items: flex-start;
         height: fit-content;
-        margin-top: 40px;
     }
 
     /* hamburger */
@@ -563,7 +601,7 @@ footer ul li:hover {
     }
 
     /*footer */
-    footer {
+    #footerSection {
         flex-direction: column-reverse;
         justify-content: center;
         align-items: center;
