@@ -9,10 +9,9 @@
 body {
     max-width: 1240px;
     margin: auto;
-    padding: 0px 50px;
     background-image: url(./images/bg-tablet-pattern.svg);
     background-repeat: no-repeat;
-    background-position: 95% -75%;
+    background-position: 95% -10%;
 }
 
 #header {
@@ -21,7 +20,11 @@ body {
     justify-content: space-between;
     align-items: center;
     height: 150px;
-    
+    padding: 0px 50px;
+}
+
+header .hamburger {
+    display: none;
 }
 
 nav ul {
@@ -46,7 +49,7 @@ nav ul li:hover {
     cursor: pointer;
 }
 
-header button {
+.startedButton {
     background-color: hsl(12, 88%, 59%);
     border: none;
     border-radius: 25px;
@@ -55,7 +58,7 @@ header button {
     font-weight: 500;
 }
 
-header button:hover {
+.startedButton:hover {
     cursor: pointer;
     opacity: 80%;
 }
@@ -66,6 +69,7 @@ header button:hover {
     justify-content: space-around;
     align-items: center;
     margin-top: 50px;
+    padding: 0px 50px;
 }
 
 #bannerLeft {
@@ -85,16 +89,6 @@ header button:hover {
     max-width: 350px;
 }
 
-#bannerLeft button {
-    background-color: hsl(12, 88%, 59%);
-    border: none;
-    border-radius: 25px;
-    padding: 15px 30px;
-    color: white;
-    font-weight: 500;
-    margin-top: 25px;
-}
-
 #bannerRight img {
     height: 90%;
     width: 90%;
@@ -102,6 +96,7 @@ header button:hover {
 
 #bannerRight {
     max-width: 50%;
+    width: fit-content;
     display: flex;    
     justify-content: flex-end;
     align-items: center;
@@ -112,6 +107,12 @@ header button:hover {
     flex-direction: row;
     justify-content: space-around;
     margin-top: 100px;
+    padding: 0px 50px;
+    background-image: url(./images/bg-tablet-pattern.svg);
+    background-repeat: no-repeat;
+    background-position: 5% 0%;
+    background-size: 50%;
+    overflow: visible;
 }
 
 #aboutLeft {
@@ -154,7 +155,6 @@ header button:hover {
     padding: 10px 25px;
     color: white;
     font-weight: 400;
-    margin-top: 25px;
     width: fit-content;
     height: fit-content;
     margin-left: -20px;
@@ -167,10 +167,19 @@ header button:hover {
 
 .aboutText h4 {
     font-weight: 700;
+    font-size: 1.1em;
 }
 
 .aboutText p {
     color: hsl(227, 12%, 61%);
+    margin-left: 70px;
+}
+
+.textTitle {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 #testimonials {
@@ -178,6 +187,7 @@ header button:hover {
     flex-direction: column;
     align-items: center;
     margin-top: 75px;
+    padding: 0px 50px;
 }
 
 #testimonials h3 {
@@ -189,10 +199,16 @@ header button:hover {
 
 #reviews {
     display: flex;
-    margin-top: 75px;
-    margin-bottom: 100px;
+    margin-top: 20px;
+    margin-bottom: 50px;
     overflow-x: auto;
-    max-height: 500px;
+    overflow-y: visible;
+    width: 100%;
+    padding-top: 70px;
+}
+
+#reviews::-webkit-scrollbar { 
+    display: none;
 }
 
 .review {
@@ -211,7 +227,7 @@ header button:hover {
 .review img {
     height: 75px;
     width: 75px;
-    margin-top: -35px;
+    margin-top: -100px;
 }
 
 .review h5 {
@@ -225,3 +241,371 @@ header button:hover {
     font-size: 1.1em;
     padding-bottom: 15px;
 }
+
+#started {
+    width: auto;
+    max-width: 1240px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 150px;
+    background-color: hsl(12, 88%, 59%);
+    margin-top: 150px;
+    padding: 50px;
+    background-image: url(./images/bg-tablet-pattern.svg);
+    background-blend-mode: soft-light;
+}
+
+#started p {
+    color: white;
+    font-size: 2.5em;
+    font-weight: 500;
+    max-width: 500px;
+}
+
+.startedButtonTwo {
+    color: hsl(12, 88%, 59%);
+    border: none;
+    border-radius: 25px;
+    padding: 15px 30px;
+    background-color: white;
+    font-weight: 500;
+}
+
+.startedButtonTwo:hover {
+    color: hsl(12, 96%, 70%);
+    cursor: pointer;
+    background-color: rgb(236, 233, 233);
+}
+
+footer {
+    background-color: #1E1E26;
+    color: white;
+    padding: 60px 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.footerImages {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#footerLogo {
+    margin-bottom: 15px;
+    filter: invert(94%) sepia(94%) saturate(0%) hue-rotate(218deg) brightness(106%) contrast(106%);
+}
+
+.footerImages img {
+    color: white;
+}
+
+#socials {
+    display: flex;
+    flex-direction: row;
+}
+
+#socials a img {
+    margin: 0px 10px;
+    color: white;
+    scale: 1.1;
+}
+
+#socials img:hover {
+    filter: invert(45%) sepia(100%) saturate(1890%) hue-rotate(340deg) brightness(102%) contrast(93%);
+}
+
+footer ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 0;
+    list-style: none;
+}
+
+footer ul li {
+    color: white;
+    margin-bottom: 15px;
+    font-size: .8em;
+    font-weight: 300;
+}
+
+footer ul li:hover {
+    color: #F66538;
+    margin-bottom: 15px;
+    font-size: .8em;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+.footerLinks {
+    display: flex;
+    flex-direction: row;
+}
+
+#footerLinksLeft {
+    margin-right: 50px;
+    margin-left: -25px;
+}
+
+#emailSubscribe input {
+    border-radius: 25px;
+    height: 47px;
+    padding: 0px 15px;
+    font-size: 1em;
+}
+
+#emailSubscribe button {
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 15px 30px;
+    background-color: hsl(12, 88%, 59%);
+    font-weight: 500;
+}
+
+#emailSubscribe button:hover {
+    color: hsl(12, 96%, 70%);
+    cursor: pointer;
+    background-color: white;
+}
+
+
+@media screen and (max-width: 960px) {
+    nav, .navButton {
+      display: none;
+    }
+
+    #banner {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        margin-top: -20px;
+    }
+
+    #bannerLeft, #bannerRight {
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #bannerLeft h1, #bannerLeft h2, #aboutLeft p {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    #bannerLeft h1 {
+        margin-bottom: 10px;
+    }
+
+    #bannerLeft h2 {
+        margin-bottom: 30px;
+    }
+
+    #bannerRight img {
+        height: 100%;
+        width: 100%;
+    }
+
+    #about {
+        flex-direction: column;
+        background-image: none;
+    }
+
+    #aboutLeft, #aboutRight {
+        max-width: 100%;
+        width: 100%;
+        text-align: center;
+    }
+
+    #aboutRight {
+        margin: 0;
+        padding: 0;
+        margin-top: 40px;
+    }
+
+    .aboutItem {
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .aboutText p {
+        margin-left: 0px;
+    }
+
+    .number {
+        margin: 0;
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+
+    .textTitle {
+        background-color: #FFF0EB;
+        width: fit-content;
+        margin: auto;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        width: 90%;
+        padding-right: 20px;
+        border-radius: 20px;
+        margin-left: 15px;
+        margin-right: -15px;
+    }
+
+    .textTitle h4 {
+        display: flex;
+        justify-items: center;
+        align-items: center;
+        margin: auto;
+        font-size: 1em;
+    }
+
+    #reviews {
+        width: 100%;
+        padding-left: 0;
+    }
+    .review {
+        max-width: 100%;
+        width: 100%;
+        flex: 1;
+        min-width: 80%;
+    }
+
+    #reviews:first-child {
+        margin-left: 0;
+    }
+
+    #testimonials {
+        margin-top: 20px;
+    }
+
+    #testimonials h3 {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    #started {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        height: fit-content;
+        margin-top: 40px;
+    }
+
+    /* hamburger */
+    .navbar {
+        display: none;
+        width: 100%;
+        max-width: none;
+        padding-left: 15%;
+    }
+
+    header .hamburger {
+        position: absolute;
+        display: block;
+        right: 25px;
+        z-index: 70;
+    }
+    
+    .visible {
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        z-index: 50;
+        position: absolute;
+        padding: 0;
+        top: 120px;
+        /* max-width: 200px; */
+        width: 100%;
+        left: 0;
+        height: fit-content;
+        justify-content: flex-start;
+        align-items: flex-start;
+        overflow: hidden;
+        overscroll-behavior: contain;
+        border-bottom: 2px solid #FFF0EB;
+    }
+
+    .visible ul {
+        flex-direction: column;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding-left: 50px;
+    }
+
+    .visible ul li {
+        padding: 10px 0px;
+        font-size: 1em;
+        border-radius: 20px;
+        width: fit-content;
+        padding: 5px 15px;
+        margin: 5px 0px;
+        color: black;
+    }
+
+    .visible ul li:hover {
+        background-color: #FFF0EB;
+        color: black;
+    }
+
+    .visible ul li:active {
+        color: hsl(227, 12%, 61%);
+    }
+
+    /*footer */
+    footer {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #emailSubscribe {
+        margin-bottom: 50px;
+    }
+
+    .footerLinks {
+        margin-bottom: 50px;
+    }
+
+    .footerImages {
+        flex-direction: column-reverse;
+    }
+
+    #footerLogo {
+        margin-top: 30px;
+    }
+  }
+
+  @media screen and (max-width: 580px) {
+   #bannerLeft h1 {
+        font-size: 2.8em;
+    }
+
+    #testimonials h3, #aboutLeft h3 {
+        font-size: 2em;
+    }
+
+    #banner, #about, #testimonials {
+        padding: 0px 20px;
+    }
+  }
+
+  @media screen and (max-width: 440px) {
+    #bannerLeft h1 {
+         font-size: 2.3em;
+     }
+ 
+     #testimonials h3, #aboutLeft h3 {
+         font-size: 1.7em;
+     }
+   }
