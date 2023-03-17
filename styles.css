@@ -6,14 +6,6 @@
     color: hsl(228, 39%, 23%);
 }
 
-/* body {
-    max-width: 1240px;
-    margin: auto;
-    background-image: url(./images/bg-tablet-pattern.svg);
-    background-repeat: no-repeat;
-    background-position: 95% -10%;
-} */
-
 body {
     padding: 0;
     margin: 0;
